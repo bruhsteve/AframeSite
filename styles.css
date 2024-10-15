@@ -1,0 +1,23 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sceneWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Change cursor when dragging */
+.grabbing {
+    cursor: grabbing;
+}
+
+.not_grabbing {
+    cursor: grab;
+}

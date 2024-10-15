@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Night 3D Recreation</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="sceneWrapper" class="not_grabbing">
+      <a-scene>
+        <a-assets>
+          <img id="sky" src="sky texture.jpg">
+        </a-assets>
+        <a-sky src="#sky"></a-sky>
+        <a-entity environment="preset: starry; groundColor: #445; grid: cross"></a-entity>
+  
+        <!-- Houses -->
+        <a-box position="-18.99232 1.483 -3.50993" rotation="0 30 0" color="#7c827e" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-19.25145 1.484 -1" rotation="0 115 0" color="#7c827e" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-21.14306 1.483 -4.59224" rotation="0 115 0" color="#7c827e" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-21.60931 1.483 -2.26088" rotation="0 25 0" color="#7c827e" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-18.91274 3.159 -2.962" rotation="40 115 90" color="#6a758b" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-21.21171 3.159 -2.06262" rotation="40 -65 90" color="#6a758b" depth="3.5" height="5" width="0.5"></a-box>
+
+        <a-box position="-16.196 1.483 -20.223" rotation="0 -30 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-16.482 1.463 -22.775" rotation="0 60 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-18.525 1.484 -19.306" rotation="0 60 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-19 1.483 -22" rotation="0 -30 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-16.345 3.079 -20.334" rotation="40 60 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-18.680 3.159 -21.683" rotation="40 -120.000 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+
+        <a-box position="10 1.483 -3.000" rotation="0 0 0" color="#5e667b" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="8.5 1.483 -5" rotation="0 90 0" color="#5e667b" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="8.5 1.484 -1" rotation="0 90 0" color="#5e667b" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="7 1.483 -3" rotation="0 0 0" color="#5e667b" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="9.655 3.159 -2.962" rotation="40 90 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="7.32 3.159 -2.935" rotation="40 -90.000 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+
+        <a-box position="-6.16624 3.07176 -20.73704" rotation="40 80 90" color="#4d527a" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-8.92699 3.14358 -20.89661" rotation="40 -100 90" color="#4d527a" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-9 1.483 -21.12318" rotation="0 -10 0" color="#677276" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-7.2145 1.463 -22.775" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-7.99386 1.484 -18.55665" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-6.33605 1.483 -20.223" rotation="0 -10 0" color="#677276" depth="4.5" height="3" width="0.5"></a-box>
+
+        <a-box position="11 3.07176 10" rotation="40 80 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="8.23925 3.14358 9.84043" rotation="40 -100 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="8.16624 1.483 9.61386" rotation="0 -10 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="9.95174 1.463 7.96204" rotation="0 80 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="9.17238 1.484 12.18039" rotation="0 80 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="10.83019 1.483 10.51404" rotation="0 -10 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+
+
+
+        <a-box position="-14.189 3.072 13.321" rotation="40 -50 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-11.951 3.144 11.396" rotation="40 130 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-11.878 1.483 11.052" rotation="0 40 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-14.312 1.463 10.596" rotation="0 -50 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-11.887 1.609 13.552" rotation="0 -50 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-14.335 1.483 13.169" rotation="0 40 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+
+
+        <a-cylinder position="10 4.796 -22.827" color=#8f969e rotation="0 0 0"  height="10" radius="3"></a-cylinder>
+        <a-cone position="10 14.796 -22.827" color="#748096" radius-bottom="3" radius-top="0.1" height="10.000" geometry="height: 15"></a-cone>
+
+        <a-box position="-18.992 3.03086 -8.48567" rotation="0 10 0" color="#7c827e" depth="4.5" height="3" width="0.5" geometry="depth: 3.16; height: 6"></a-box>
+        <a-box position="-19.93219 3 -6.642" rotation="0 100.71 0" color="#7c827e" depth="3" height="3" width="0.5" geometry="height: 6"></a-box>
+        <a-box position="-20.59151 3 -9.58455" rotation="0 98.82 0" color="#7c827e" depth="3" height="3" width="0.5" geometry="height: 6"></a-box>
+        <a-box position="-20.59151 3 -9.58455" rotation="0 98.82 0" color="#7c827e" depth="3" height="3" width="0.5" geometry="height: 6"></a-box>
+        <a-box position="-20.05299 6.664 -6.858" rotation="40 8.11 90" color="#6a758b" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-20.45087 6.8053 -9.40227" rotation="40 -171.55 90" color="#6a758b" depth="3.5" height="5" width="0.5"></a-box>
+
+        <a-box position="8.00671 2.5 2.53429" rotation="0 -10 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="9.61446 2.5 3.95278" rotation="0 -100 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="11.47679 2.5 2.96758" rotation="0 -10 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="9.97789 2.5 1.60596" rotation="0 -100 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="9.72604 5.64424 3.61302" rotation="50.410000000000004 -10 90" color="#4d527a" depth="3.5" height="5" width="0.5" geometry="depth: 2.4"></a-box>
+        <a-box position="10.04275 5.68365 1.85547" rotation="50 170 90" color="#4d527a" depth="3.5" height="5" width="0.5" geometry="depth: 2.4"></a-box>
+
+        <a-box position="11.69945 3 -10.11405" rotation="0 5 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="14.20528 3 -13.0896" rotation="0 95 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="14.74745 3 -7.13849" rotation="0 95 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="17.16825 3 -10.59738" rotation="0 5 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="16.34513 7.17755 -9.92745" rotation="40 95 90" color="#3f3830" depth="3.5" height="5" width="0.5" geometry="depth: 4.39; height: 10"></a-box>
+        <a-box position="12.50294 7.1332 -9.55708" rotation="40 -85 90" color="#3f3830" depth="3.5" height="5" width="0.5" geometry="depth: 4.72; height: 10"></a-box>
+
+        <a-box position="-26.99472 3 -4.8896" rotation="0 95 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="-26.45255 3 1.06151" rotation="0 95 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="-24.03175 3 -2.39738" rotation="0 5 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="depth: 6; height: 6"></a-box>
+        <a-box position="-24.85487 7.17755 -1.72745" rotation="40 95 90" color="#3f3830" depth="3.5" height="5" width="0.5" geometry="depth: 4.39; height: 10"></a-box>
+        <a-box position="-28.69706 7.1332 -1.35708" rotation="40 -85 90" color="#3f3830" depth="3.5" height="5" width="0.5" geometry="depth: 4.72; height: 10"></a-box>
+
+        <a-box position="-18.23925 3.07176 3.15957" rotation="40 80 90" color="#4d527a" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-21 3.14358 3" rotation="40 -100 90" color="#4d527a" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-21.07301 1.483 2.77343" rotation="0 -10 0" color="#677276" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-20.06687 1.484 1.122" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-18.40906 1.483 3.67361" rotation="0 -10 0" color="#677276" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-20.43327 1.463 5.26093" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+
+        <a-box position="-24.81425 3.7437 -20.41858" rotation="40 80 90" color="#4d527a" depth="3.5" height="5" width="0.5" geometry="height: 10.74"></a-box>
+        <a-box position="-27.64604 3.75619 -20.89661" rotation="40 -100 90" color="#4d527a" depth="3.5" height="5" width="0.5" geometry="height: 10.68"></a-box>
+        <a-box position="-27.24029 1.484 -15.86187" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-24.71691 1.483 -20.223" rotation="0 -10 0" color="#677276" depth="4.5" height="3" width="0.5" geometry="depth: 10"></a-box>
+        <a-box position="-25.71721 1.463 -25.38572" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-28.06163 1.483 -21.12318" rotation="0 -10 0" color="#677276" depth="4.5" height="3" width="0.5" geometry="depth: 10"></a-box>
+        <a-box position="-27.24029 1.484 -15.86187" rotation="0 80 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+
+
+
+        <a-box position="3.40759 3.079 -10.97443" rotation="40.0404 71.56 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="1.11994 3.159 -11.39749" rotation="40 -107.96000000000001 90" color="#3f3830" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="1.9494 1.483 -9.57766" rotation="0 81.16 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="0.94353 1.483 -11.82861" rotation="0 -17.56 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="3.67149 1.483 -11.13167" rotation="0 -15.75 0" color="#6b695c" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="2.94291 1.484 -13.41728" rotation="0 76.86 0" color="#6b695c" depth="3" height="3" width="0.5"></a-box>
+
+        <a-box position="-8.51903 3.744 -27.49191" rotation="40 20.03 90" color="#472423" depth="3.5" height="5" width="0.5" geometry="height: 10.74"></a-box>
+        <a-box position="-9.25175 3.689 -29.66243" rotation="40 -158.81 90" color="#472423" depth="3.5" height="5" width="0.5" geometry="height: 10.68"></a-box>
+        <a-box position="-8.25797 1.483 -27.54971" rotation="0 -67.07 0" color="#677276" depth="4.5" height="3" width="0.5" geometry="depth: 10"></a-box>
+        <a-box position="-13.43671 1.5 -27.12465" rotation="0 24.21 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-9.67004 1.483 -29.93586" rotation="0 -64.95 0" color="#677276" depth="4.5" height="3" width="0.5" geometry="depth: 10"></a-box>
+        <a-box position="-4.50484 1.463 -30.91003" rotation="0 25.01 0" color="#677276" depth="3" height="3" width="0.5"></a-box>
+        
+        <a-box position="0.25081 8.52851 -29.6577" rotation="40 -50 90" color="#4d7980" depth="3.5" height="5" width="0.5" geometry="depth: 4.39; height: 10"></a-box>
+        <a-box position="3.00682 8.21937 -31.99026" rotation="40 -230 90" color="#4d7980" depth="3.5" height="5" width="0.5" geometry="depth: 4.72; height: 10"></a-box>
+        <a-box position="-0.49642 3 -28.92557" rotation="0 37.78 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="depth: 7.69; height: 8.8"></a-box>
+        <a-box position="4.14826 3 -27.76094" rotation="0 -49.58 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="depth: 6; height: 7.79"></a-box>
+        <a-box position="-1.24282 3 -33.98607" rotation="0 130 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="depth: 6; height: 9.04"></a-box>
+        <a-box position="3.56808 3 -32.52012" rotation="0 41.29 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="depth: 7.73; height: 7.13"></a-box>
+
+        <a-box position="-11.3679 2.5 -13.1783" rotation="0 -58.24 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="-13.11557 5.64424 -13.92955" rotation="50.410000000000004 -60.67 90" color="#4d527a" depth="3.5" height="5" width="0.5" geometry="depth: 3.27"></a-box>
+        <a-box position="-11.48809 5.68365 -14.84548" rotation="50 118.84000000000002 90" color="#4d527a" depth="3.5" height="5" width="0.5" geometry="depth: 3.14"></a-box>
+        <a-box position="-13.47643 2.5 -13.96996" rotation="0 -150.71 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="-11.17747 2.5 -15.21136" rotation="0 -147.98 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="-13.08508 2.5 -16.3252" rotation="0 -60.83 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="height: 5"></a-box>
+
+
+
+        <a-box position="-6.91937 2.5 4.97078" rotation="0 -116.52000000000001 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="-8.64846 5.98818 6.133" rotation="50.410000000000004 -116.66 90" color="#472423" depth="3.5" height="5" width="0.5" geometry="depth: 3.27"></a-box>
+        <a-box position="-6.63043 6.02279 7.11895" rotation="50 63.11999999999999 90" color="#472423" depth="3.5" height="5" width="0.5" geometry="depth: 3.14"></a-box>
+        <a-box position="-6.50588 2.5 7.3773" rotation="0 -204.63 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="-8.51967 2.5 8.55199" rotation="0 -115.88 0" color="#5e667b" depth="3" height="3" width="0.5" geometry="height: 5"></a-box>
+        <a-box position="-8.66235 2.5 6.20158" rotation="0 -204.1 0" color="#5e667b" depth="4.5" height="3" width="0.5" geometry="height: 5"></a-box>
+        
+                <!-- Spike -->
+
+        <a-cone position="6.832 137.36296 144" color="#000" radius-bottom="10" radius-top="0.1" height="40.000" geometry="height: 80"></a-cone>
+        <a-box position="9.97789 1.483 1.60596" rotation="0 -100 0" color="#5e667b" depth="4.5" height="3" width="0.5"></a-box>
+
+        <a-cylinder position="6.832 48.654 144.062" color=#000 rotation="0 0 0"  height="100" radius="10"></a-cylinder>
+        <a-cone position="6.832 118.1 144" color=#000 radius-bottom="10" radius-top="0.1" height = "40.000"></a-cone>
+        
+        <a-cylinder position="-7.59359 34.54939 144.062" color="#000" rotation="" height="75" radius="8"></a-cylinder>
+        <a-cone position="-7.84135 81.59415 144" color="#000" radius-bottom="8" radius-top="0.1" height="20.000"></a-cone>
+
+    
+        <a-cylinder position="20 29.17109 140.88878" color="#000" rotation="" height="60" radius="7"></a-cylinder>
+        <a-cone position="20 89.55003 140.43181" color="#000" radius-bottom="7" radius-top="0.1" height="60.000"></a-cone>
+
+        <a-cylinder position="30 19.30545 140.88878" color="#000" rotation="" height="40" radius="7"></a-cylinder>
+        <a-cone position="30 64.75779 140.432" color="#000" radius-bottom="7" radius-top="0.1" height="50.000"></a-cone>
+
+        <a-cylinder position="42.31044 19.305 140.889" color="#000" rotation="" height="40" radius="7"></a-cylinder>
+
+        <a-cylinder position="52.35922 19.305 140.889" color="#000" rotation="" height="40" radius="7"></a-cylinder>
+        <a-cone position="52.57884 46.69515 140.432" color="#000" radius-bottom="7" radius-top="0.1" height="50.000" geometry="height: 15"></a-cone>
+
+
+
+        <!-- Light for better object visibility -->
+        <a-light type="ambient" color="#445451"></a-light>
+        <a-light type="directional" position="1 1 0" intensity="1"></a-light>
+
+        <!-- Rotatable camera -->
+        <a-entity id="cameraWrapper" position="0 0 0">
+          <a-camera wasd-controls="enabled: false" look-controls="enabled: false"></a-camera>
+        </a-entity>
+      </a-scene>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="rotation_script.js"></script>
+  </body>
+</html>
